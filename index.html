@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon"/>
+    <title>Coffee & Cookie</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Coffee & Cookie</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">What You'll Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Members</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Important Links
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="https://discord.com/invite/MBdP9qxSjM" target="_blank">Discord</a></li>
+                <li><a class="dropdown-item" href="https://youtube.com/@lordcoffeecookie" target="_blank">Youtube</a></li>
+                <li><a class="dropdown-item" href="https://www.roblox.com/groups/33365557/Gamers-Code-Universe" target="_blank">Roblox Group</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+     
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Become a <span class="text-warning"> Gamer with us </span></h1>
+            <p class="lead my-4">
+              We focus on helping you learn how to become better at games plus you can also learn how to code with us!!
+            </p>
+            <!-- <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start The Enrollment
+            </button> -->
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Gamer</h3>
+                <p class="card-text">
+                  Go to our youtube channel to see how we play and also learn with the process. 
+                  Plus Subscribe!!
+                </p>
+                <a href="https://youtube.com/@lordcoffeecookie/" class="btn btn-primary" target="_blank">Youtube</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Join us !!</h3>
+                <p class="card-text">
+                  Go to our Discord server to find important links <br><br>
+                </p>
+                <a href="https://discord.com/invite/MBdP9qxSjM" target="_blank" class="btn btn-dark">Discord</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">Join Roblox with me !!</h3>
+                <p class="card-text">
+                  Join us and  play with me and enjoy the games made by me ⬇ <br>
+                  Join my discord Server for updates!!
+                </p>
+                <a href="https://www.roblox.com/groups/33365557/Gamers-Code-Universe" class="btn btn-primary" target="_blank">Roblox Group</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/fundamentals.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn The Fundamentals of <u>Gaming</u></h2>
+            <p class="lead">
+              Learn by going to my discord server for the links and subscribe to me for updates
+              !!
+            </p>
+            <!-- <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              reiciendis eius autem eveniet mollitia, at asperiores suscipit
+              quae similique laboriosam iste minus placeat odit velit quos,
+              nulla architecto amet voluptates?
+            </p> -->
+            <a href="https://discord.com/invite/MBdP9qxSjM" target="_blank" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Discord
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Roblox Group</h2>
+            <p class="lead">
+              Join my roblox group for updates on games !!
+            </p>
+            <!-- <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              reiciendis eius autem eveniet mollitia, at asperiores suscipit
+              quae similique laboriosam iste minus placeat odit velit quos,
+              nulla architecto amet voluptates?
+            </p> -->
+            <a href="https://www.roblox.com/groups/33365557/Gamers-Code-Universe" target="_blank"  class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Roblox Group
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/react.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                What exactly are we doing here?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                We are helping you learn gaming. Getting you better at!!
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                How much does it cost to learn?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Just free of cost !!
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                What do I need to Know?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Just some basic of gaming 
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                How Do I sign up?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Just Subscribe and join my discord to get started!! 
+                Easy
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Do you help me find a job?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                We help becuase we want people to just learn the basic. We don't help you get a job!!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Our Members</h2>
+        <p class="lead text-center text-white mb-5">
+          Our Members all have 5+ years working as a Gamer in the
+          industry
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/me.png"
+                  class="rounded-circle mb-3 w-100"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Lord Coffee Cookie</h3>
+                <p class="card-text">
+                  A Gamer, Programmer, and A youtuber <br> 
+                </p>
+                <a href="https://youtube.com/@lordcoffeecookie" target="_blank"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                <!-- <a href="https://github.com/gamerscodeuniverse" target="_blank"><i class="bi bi-github text-dark mx-1"></i></a> -->
+                <!-- <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/uni.jpg"
+                  class="rounded-circle mb-3 w-100"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Uni</h3>
+                <p class="card-text">
+                  A Gamer<br>
+                  Helping you improve and <br> learn better  
+                </p>
+                 <a href="https://youtube.com/@lordcoffeecookie" target="_blank"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                <!-- <a href="https://github.com/gamerscodeuniverse" target="_blank"><i class="bi bi-github text-dark mx-1"></i></a> --> 
+                <!-- <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/channels4_profile.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Kay</h3>
+                <p class="card-text">
+                  A Gamer, A youtuber <br>
+                  Helping you improve and <br> learn better  
+                </p>
+                <a href="https://www.youtube.com/@Kayne346" target="_blank"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                <!-- <a href="https://github.com/gamerscodeuniverse" target="_blank"><i class="bi bi-github text-dark mx-1"></i></a> -->
+                <!-- <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/mod.png"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Coffee Cookie</h3>
+                <p class="card-text">
+                  
+                </p>
+                <a href="https://youtube.com/@lordcoffeecookie/ " target="_blank"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                <!-- <a href="https://github.com/gamerscodeuniverse" target="_blank"><i class="bi bi-github text-dark mx-1"></i></a> -->
+                <!-- <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- <<div class="col-md"> -->
+            <h2 class="text-center mb-4">Discord</h2>
+            <!-- <ul class="list-group list-group-flush lead"> -->
+              <!-- <li class="list-group-item"> -->
+                <!-- <span class="fw-bold">Email:</span>  -->
+                <!-- gamerscodeuniverse@gmail.com -->
+              <!-- </li> -->
+            <!-- </ul> -->
+          <!-- </div>  -->
+          <!-- <div class="col-md">
+            <div id="map"></div>
+          </div> -->
+          <iframe src="https://discord.com/widget?id=1187693449319809076&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact & Map -->
+    <section class="p-5" style="background-color: lightcyan;" >
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item" style="background-color: lightcyan;">
+                <span class="fw-bold">Email:</span> 
+                gamerscodeuniverse@gmail.com
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="col-md">
+            <div id="map"></div>
+          </div> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722544.499464102!2d51.30625296269982!3d24.336132216451382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e48dfb1ab12bd%3A0x33d32f56c0080aa7!2sUnited%20Arab%20Emirates!5e0!3m2!1sen!2sae!4v1709222589016!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 Tech Gamer</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [25.288524 ,  55.449051],
+        zoom: 18,
+      })
+    </script> -->
+  </body>
+</html>
